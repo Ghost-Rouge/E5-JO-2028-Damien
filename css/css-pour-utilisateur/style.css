@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;  /* Espacement légèrement plus large */
+    margin-right: 25px;  /* Marges ajustées */
+}
+
+nav a {
+    margin-top: 12px;  /* Espacement légèrement plus grand */
+    border-radius: 45px;  /* Arrondi accentué */
+}
+
+a:hover {
+    background-color: rgb(145, 145, 45);  /* Jaune plus doux et plus intense */
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+a {
+    padding: 20px 18px;  /* Augmentation subtile du padding */
+    background-color: #222;  /* Noir plus doux et plus intense */
+    color: rgb(250, 250, 50);  /* Jaune plus intense */
+}
+
+img {
+    width: 155px;  /* Taille légèrement augmentée */
+    margin-top: 130px;  /* Ajustement mineur de la position */
+}
+
+.pc-tablette {
+    margin-top: 180px;
+}
+
+.pc-tablette span a {
+    padding: 32px 85px;  /* Padding légèrement augmenté */
+    border-radius: 12px;  /* Bordure un peu plus arrondie */
+}
+
+.pc-tablette .ligne1 {
+    
+}
+
+.pc-tablette .ligne1 a {
+    margin-left: 90px;  /* Espacement plus large pour la symétrie */
+}
+
+.pc-tablette .ligne2 {
+    
+    margin-top: 90px;  /* Légère augmentation de l'espacement */
+}
+
+.pc-tablette a {
+    font-size: 48px;  /* Taille de police un peu plus grande */
+    padding: 30px 65px;  /* Padding légèrement augmenté */
+    border-radius: 12px;  /* Arrondi accentué */
+}
+
+/* Pour téléphone */
+@media (min-width: 300px) and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;  /* Espacement un peu plus large */
+        margin-right: 0;
+        padding-left: 65px;  /* Légèrement augmenté */
+        padding-right: 65px;  /* Légèrement augmenté */
+        margin-top: 22px;  /* Augmentation légère */
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .telephone-uniquement .ligne1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 75px;  /* Augmentation légère du padding */
+        padding-left: 55px;  /* Légèrement augmenté */
+        padding-right: 55px;  /* Légèrement augmenté */
+        gap: 22px;  /* Espacement plus large */
+    }
+
+    .telephone-uniquement .ligne1 a {
+        padding: 52px;  /* Augmenté pour un meilleur confort */
+        font-size: 21px;  /* Légère augmentation de la taille */
+        text-align: center;
+        border-radius: 22px;  /* Arrondi accentué */
+    }
+
+    img {
+        padding-bottom: 60px;  /* Espacement ajusté */
+    }
+
+    .pc-tablette {
+        display: none;
+    }
+}
+
+/* A NE PAS TOUCHER */
+@media (min-width: 1025px) {
+    .telephone-uniquement {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .pc-tablette {
+        display: none;
+    }
+}
+/* A NE PAS TOUCHER */
+
+/* Pour tablette */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;  /* Espacement plus large */
+        margin-right: 0;
+        padding-left: 125px;  /* Légèrement augmenté */
+        padding-right: 125px;  /* Légèrement augmenté */
+        margin-top: 22px;  /* Légère augmentation de l'espacement */
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .telephone-uniquement .ligne1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 75px;  /* Augmentation légère du padding */
+        padding-left: 125px;  /* Légèrement augmenté */
+        padding-right: 125px;  /* Légèrement augmenté */
+        gap: 22px;  /* Espacement plus large */
+    }
+
+    .telephone-uniquement .ligne1 a {
+        padding: 52px;  /* Augmenté pour un meilleur confort */
+        font-size: 21px;  /* Légère augmentation de la taille */
+        text-align: center;
+        border-radius: 22px;  /* Arrondi accentué */
+    }
+
+    img {
+        padding-bottom: 60px;  /* Espacement ajusté */
+    }
+}
